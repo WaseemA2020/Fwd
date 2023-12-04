@@ -1,0 +1,36 @@
+<html>
+<style>
+body{
+  background-color:blue;
+  color:black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:cursive;
+  min-height:100vh;
+  }
+</style>
+<body>
+<h1>My Name is :  </h1>
+
+<script>
+let myName = "Abdulrahman";
+let index = 1;
+function writeText(){
+  document.querySelector("h1").textContent = myName.slice(0,index);
+  index++
+  
+ if(index > myName.length) {
+  index = 1;
+  }
+  
+}
+setInterval(function(){
+ 
+ writeText();
+ 
+},100)
+</script>
+</body>
+
+</html>
